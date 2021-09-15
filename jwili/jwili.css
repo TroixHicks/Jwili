@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+body{
+    font-family: 'Open sans';
+}
+
+header{
+    border: 1px solid transparent;
+    height: 50px;
+    width: 100%;
+   
+}
+header li{
+    list-style: none;
+    display: inline;
+    margin-left: 100px;
+    
+  
+
+}
+li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+.special{
+    border: 1px solid transparent;
+    height: 350px;
+    width: 100%;
+    background-color: rgb( 242, 243, 245);
+    
+}
+
+.more{
+    border: 1px solid transparent;
+    height: 250px;
+    width: 100%;
+}
+
+.big{
+    border: 1px solid transparent;
+    height:550px;
+    width: 100%;
+    background-color: rgb( 242, 243, 245);
+}
+
+.small{
+    border: 1px solid transparent;
+    height: 400px;
+    width: 100%;
+}
+
+.last{
+    border: 1px solid transparent;
+    height: 300px;
+    width: 100%;
+}
+
+footer{
+    border: 1px solid transparent;
+    height: 175px;
+    width: 100%;
+    background-color: rgb(145,156, 162);
+}
+
+.inside{
+    border: 1px solid transparent;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(186, 197, 207);
+}
+
+.image{
+    position: relative;
+    left: 200px;
+    top: 50px;
+}
+
+.special > p{
+    width: 50%;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+h1{
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.none{
+    text-align: center;
+    width:60%;
+    position: relative;
+    left: 230px;
+    font-size: 25px;
+}
+
+.lil{
+    float: left;
+    width: 20%;
+    margin-left: 230px;
+    font-size: 12px;
+    
+    
+}
+
+.lil::first-line{
+    text-decoration-line: overline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+.mov{
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    text-align:center;
+    font-style: italic;
+    color:gray;
+}
+.big > h2{
+    margin-left: 20px;
+}
+.main{
+    width: 50%;
+    margin-left: 20px;
+    float: left;
+}
+
+.zip{
+    float: right;
+    position: relative;
+    bottom:200px;
+    right: 150px;
+    
+}
+
+.dif{
+    float: right;
+    position: relative;
+    top: 50px;
+    
+}
+
+.aside{
+    border: 1px solid lightgray;
+    height: 250px;
+    width: 80%;
+    margin-left: 80px;
+}
+
+
+
+.aside > p{
+   
+    position: relative;
+    bottom: 200px;
+    left: 200px;
+    width: 70%;
+    left: 220px;
+}
+
+.small > h2{
+    text-align: center;
+}
+
+.last > p{
+    width: 40%;
+    float: left;
+}
+
+.group{
+    position: relative;
+    left: 50px;
+    top: 10px;
+
+}
+
+.lip{
+    position: relative;
+    left: 100px;
+    bottom: 35px;
+}
+
+.last > h3{
+    color: gray;
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    header li{
+        list-style: none;
+        display: inline;
+        margin-left: 30px;
+        
+      
+    
+    }
+
+    .more{
+        position: relative;
+        right: 200px;
+    }
+
+    .lil{
+       width: 100%;
+       float: left;
+       text-align: left;
+       position: relative;
+       bottom: 20px;
+    }
+
+    .mov{
+        
+        position: relative;
+       bottom: 20px;
+       left: 100px;
+
+    }
+
+    .main{
+        font-size: 10px;
+    }
+
+    .small > h2{
+        position: relative;
+        right: 60px;
+    }
+    .aside{
+        position: relative;
+        right: 70px;
+    }
+
+    .aside > p{
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .lets{
+        float: left;
+        width: 60%;
+        font-size: 14px;
+        position: relative;
+        bottom: 90px;
+    }
+
+    .go{
+        float: left;
+        width: 60%;
+        font-size: 14px;
+        position: relative;
+        bottom: 30px;
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 375px){
+   
+    .hide, .big, footer, .inside{
+      display: none;
+    }
+  
+    .image{
+      margin-right: -100px;
+    }
+  
+    header li{
+        margin: 5%;
+    }
+  
+    .image{
+      float: left;
+      margin-left: -50%;
+      
+    }
+  
+    .special > h1{
+        float: left;
+        margin-left: -25%;
+        font-size: 18px;
+        margin-top: 10%;
+    }
+  
+    .special > p{
+      margin-left: -25%;
+      width: 100%;
+      
+   }
+    .none{
+        float:left;
+        font-size: 16px;
+        width: 100%;
+        margin-left: -65%;
+    }
+  
+    .lil{
+        float: left;
+        width: 100%;
+        margin-left: 2%;
+       
+    }
+  
+    .aside{
+        border-color: transparent;
+    }
+  
+    .aside > p{
+      float: left;
+      margin-left: -180%;
+      margin-top: 170%;
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .group{
+        float: left;
+        width: 100%;
+        position: relative;
+        margin-left: -35px;
+        top: 310px;
+        
+        
+        
+    }
+    
+    .lip{
+        float: left;
+        width: 100%;
+        position: relative;
+        top: 300px;
+        margin-left: -25%;
+    }
+  
+    .gab{
+        width: 100%;
+        float: left;
+        margin-left: -15%;
+    }
+  
+}
+
+@media only screen and (min-width: 1224px){
+    
+    .lets{
+        position: relative;
+        bottom: 50px;
+        width: 80%;
+    }
+
+    .go{
+        position: relative;
+        bottom: 10px;
+        width: 80%;
+        right: 50px;
+    }
+
+    footer{
+        margin:0px;
+    }
+
+    .aside{
+        position: relative;
+        left: 30px;
+    }
+
+    .main{
+        position: relative;
+        bottom: 20px;
+    }
+
+}
+  
+
+
